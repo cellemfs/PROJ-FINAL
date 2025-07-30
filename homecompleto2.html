@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelle Marques</title>
+  <link rel="icon" type="image/png" href="./images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="icon" type="image/png" href="./images/favicon copy.ico">
+  <link rel="stylesheet" href="homecompleto2.css">
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light py-4">
+      <div class="container">
+          <a class="navbar-brand d-flex align-items-center justify-content" href="#">
+              <div class="header-logo">
+                  <div><img src="./images/M-Pronto.webp" alt="Marcelle Marques Logo"></div>
+              </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link btn-center-container" href="#">Início</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link btn-center-container" href="#sobre">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link btn-center-container" href="#projetos">Projetos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link btn-center-container" href="#contato">Contato</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Hero Section com Background Geométrico -->
+  <div class="main">
+      <!-- Background-->
+      <div class="geometric-bg">
+          <div class="geo-block geo-block-1 geo-square"></div>
+          <div class="geo-block geo-block-2 geo-rect"></div>
+          <div class="geo-block geo-block-3 geo-triangle geo-triangle-up"></div>
+          <div class="geo-block geo-block-4 geo-rect"></div>
+          <div class="geo-block geo-block-5 geo-square"></div>
+          <div class="geo-block geo-block-6 geo-triangle geo-triangle-down"></div>
+          <div class="geo-block geo-block-7 geo-square"></div>
+          <div class="geo-block geo-block-8 geo-rect"></div>
+          <div class="geo-block geo-block-9 geo-triangle geo-triangle-left"></div>
+          <div class="geo-block geo-block-10 geo-rect"></div>
+          <div class="geo-block geo-block-11 geo-square"></div>
+          <div class="geo-block geo-block-12 geo-triangle geo-triangle-right"></div>
+          <div class="geo-block geo-block-13 geo-square"></div>
+          <div class="geo-block geo-block-14 geo-rect"></div>
+          <div class="geo-block geo-block-15 geo-triangle geo-triangle-up"></div>
+          <div class="geo-block geo-block-16 geo-rect"></div>
+          <div class="geo-block geo-block-17 geo-square"></div>
+          <div class="geo-block geo-block-18 geo-triangle geo-triangle-down"></div>
+          <div class="geo-block geo-block-19 geo-square"></div>
+          <div class="geo-block geo-block-20 geo-rect"></div>
+          <div class="geo-block geo-block-21 geo-square"></div>
+          <div class="geo-block geo-block-22 geo-triangle geo-triangle-left"></div>
+          <div class="geo-block geo-block-23 geo-rect"></div>
+          <div class="geo-block geo-block-24 geo-square"></div>
+          <div class="geo-block geo-block-25 geo-triangle geo-triangle-right"></div>
+          <div class="geo-block geo-block-26 geo-rect"></div>
+          <div class="geo-block geo-block-27 geo-square"></div>
+          <div class="geo-block geo-block-28 geo-triangle geo-triangle-up"></div>
+          <div class="geo-block geo-block-29 geo-rect"></div>
+          <div class="geo-block geo-block-30 geo-square"></div>
+      </div>
+      
+      <div class="main-content">
+          <h1>Olá, eu sou Marcelle Marques</h1>
+          <p>
+              E vou te mostrar como funciona a programação na prática!
+
+Neste simulador interativo, vais ver como as tuas informações se transformam em código JavaScript real. É como ter uma janela para o mundo dos developers - observas o processo acontecer passo a passo.
+
+Não precisas de conhecimentos prévios, apenas curiosidade! Preenche os campos, vê o código formar-se automaticamente e descobre como a programação pode ser intuitiva.
+            
+          </p>
+      </div>
+  </div>
+
+  <!-- Sistema de Skills Original -->
+  <main class="main-content">
+      <div class="container">
+          <div class="row g-4">
+              <!-- Formulário -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="card h-100">
+                      <div class="card-body p-3">
+                          <div class="section-header">
+                              Conte-me sobre você!
+                          </div>
+                          
+                          <div class="mb-3">
+                              <label class="form-label fw-bold text-dark">Nome:</label>
+                              <input type="text" class="form-control" id="nome" value="" placeholder="Nome" oninput="previa()" onkeypress="handleEnter(event, 'profissao')">
+                          </div>
+                          
+                          <div class="mb-3">
+                              <label class="form-label fw-bold text-dark">Profissão:</label>
+                              <input type="text" class="form-control" id="profissao" value="" placeholder="Ex: Desenvolvedor Front-end" oninput="previa()" onkeypress="handleEnter(event, 'novaSkill')">
+                          </div>
+                          
+                          <div class="mb-3">
+                              <label class="form-label fw-bold text-dark">Skills:</label>
+                              <div id="listaSkills"></div>
+                              
+                              <div class="input-group">
+                                  <input type="text" class="form-control" id="novaSkill" placeholder="Ex: JavaScript, React..." oninput="previa()" onkeypress="handleEnterSkill(event)">
+                                  <button class="btn btn-primary" type="button" onclick="adicionarSkill()">
+                                     Adicionar
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Código -->
+              <div class="col-lg-8 col-md-6">
+                  <div class="card h-100">
+                      <div class="card-body p-3">
+                          <div class="section-header">
+                              Veja a magia acontecer!
+                              <div class="theme-toggle-container">
+                                  <div class="toggle-switch" id="themeToggle" onclick="alternarTema()">
+                                      <div class="toggle-slider">
+                                          <span id="themeIcon">🌙</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="code-display dark-theme" id="codigo"></div>
+                          
+                          <div class="btn-center-container">
+                              <button class="btn btn-apresentacao" onclick="mostrarApresentacao()">
+                                  Ver sua apresentação!
+                              </button>
+                          </div>
+                          
+                          <div class="output-display" id="resultado"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+
+  <!-- Seção Sobre Mim -->
+  <section class="sobre-section py-5" id="sobre">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Conteúdo Textual -->
+              <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+                  <div class="sobre-content">
+                      <h2 class="sobre-title">Sobre mim</h2>
+                      <div class="sobre-underline"></div>
+                      
+                      <p class="sobre-description">
+                          Olá! Sou Marcelle, uma desenvolvedora front-end e designer UI/UX em transição de carreira. Após anos a trabalhar em outras áreas, redescobri minha paixão pela tecnologia e design.
+                      </p>
+                      <p class="sobre-description">
+                          Hoje, combino criatividade e código para criar experiências digitais que fazem a diferença na vida das pessoas. Cada projeto é uma oportunidade de aprender e crescer.
+                      </p>
+                      
+                      <div class="skills-grid">
+                          <h3 class="skills-title">Skills</h3>
+                          <div class="row g-3">
+                              <div class="col-6">
+                                  <div class="skill-item-rect">
+                                      <i class="fab fa-js-square skill-icon-rect"></i>
+                                      <span class="skill-name-rect">JavaScript</span>
+                                  </div>
+                              </div>
+                              <div class="col-6">
+                                  <div class="skill-item-rect">
+                                      <i class="fab fa-html5 skill-icon-rect"></i>
+                                      <span class="skill-name-rect">HTML/CSS</span>
+                                  </div>
+                              </div>
+                              <div class="col-6">
+                                  <div class="skill-item-rect">
+                                      <i class="fab fa-figma skill-icon-rect"></i>
+                                      <span class="skill-name-rect">Figma</span>
+                                  </div>
+                              </div>
+                              <div class="col-6">
+                                  <div class="skill-item-rect">
+                                      <i class="fas fa-paint-brush skill-icon-rect"></i>
+                                      <span class="skill-name-rect">Illustrator</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Profile Card -->
+              <div class="col-lg-5 col-md-6">
+                  <div class="profile-card text-center">
+                      <div class="profile-image-container">
+                          <img src="./images/perfil.webp" alt="Marcelle Marques" class="profile-image">
+                      </div>
+                      <h3 class="profile-name">Marcelle Marques</h3>
+                      <p class="profile-title">Front-end Developer & UI/UX Designer</p>
+                      <div class="profile-social">
+                          <button class="btn btn-social d-flex align-items-center justify-content-center" onclick="linkedInClick()">
+                              <i class="fab fa-linkedin-in"></i>
+                          </button>
+                          <button class="btn btn-social d-flex align-items-center justify-content-center" onclick="gitHubClick()">
+                              <i class="fab fa-github"></i>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- Seção Projetos -->
+  <section class="projetos-section py-5" id="projetos">
+      <div class="container">
+          <div class="text-center mb-5">
+              <h2 class="projetos-title">Meus Projetos</h2>
+              <p class="projetos-subtitle">Conheça alguns dos meus trabalhos mais recentes e as<br>tecnologias utilizadas em cada projeto.</p>
+          </div>
+          
+          <div class="row g-4">
+              <!-- Projeto 1 -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="projeto-card">
+                      <div class="projeto-image-container">
+                          <img src="./images/normaengtec.webp" alt="Portfolio Profissional" class="projeto-image">
+                      </div>
+                      <div class="projeto-content">
+                          <h3 class="projeto-title">Portfolio Profissional</h3>
+                          <p class="projeto-description">Site portfolio para uma empresa especializada em infraestruturas com design moderno e responsivo.</p>
+                          <div class="projeto-tech">
+                              <span class="tech-tag tech-html">HTML/CSS</span>
+                              <span class="tech-tag tech-js">JavaScript</span>
+                               <span class="tech-tag tech-js">Bootstrap</span>
+                          </div>
+                          <button class="btn-ver-mais" onclick="abrirModalProjeto('normaengtec')">Ver mais</button>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Projeto 2 -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="projeto-card">
+                      <div class="projeto-image-container">
+                          <img src="./images/kidzCoin.webp" alt="Kidz Coin App" class="projeto-image">
+                      </div>
+                      <div class="projeto-content">
+                          <h3 class="projeto-title">Kidz Coin App</h3>
+                          <p class="projeto-description">O Kidzcoin é uma app educativa e financeira que permite aos pais atribuírem "Kidcoins" aos filhos como recompensa por tarefas.</p>
+                          <div class="projeto-tech">
+                              <span class="tech-tag tech-figma">Figma</span>
+                          </div>
+                          <button class="btn-ver-mais" onclick="abrirModalProjeto('kidzcoin')"> Ver mais</button>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Projeto 3 -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="projeto-card">
+                      <div class="projeto-image-container">
+                          <img src="./images/skills.webp" alt="E-commerce Platform" class="projeto-image">
+                      </div>
+                      <div class="projeto-content">
+                          <h3 class="projeto-title">Sistema de Skills</h3>
+                          <p class="projeto-description">Uma ferramenta que converte suas informações pessoais e habilidades técnicas em código JavaScript funcional, mostrando o processo de programação em tempo real.</p>
+                          <div class="projeto-tech">
+                              <span class="tech-tag tech-nextjs">JavaScript</span>
+                              <span class="tech-tag tech-nodejs">HTML/CSS</span>
+                              <span class="tech-tag tech-mongodb">Bootstrap</span>
+                          </div>
+                          <button class="btn-ver-mais" onclick="abrirModalProjeto('skills')">Ver mais</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Seção de Contato com Currículo -->
+<section class="contato-section py-5" id="contato">
+    <div class="container">
+        <!-- Seção Currículo -->
+        <div class="text-center mb-5">
+            <h2 class="curriculo-title">Currículo</h2>
+            <p class="curriculo-subtitle">Conheça minha trajetória profissional</p>
+        </div>
+        
+        <div class="curriculo-card-container mb-5">
+            <div class="row g-0">
+                <!-- Experiência -->
+                <div class="col-lg-6">
+                    <div class="curriculo-column">
+                        <h3 class="curriculo-column-title">Experiência</h3>
+                        
+                        <div class="curriculo-item-new">
+                            <h4 class="curriculo-item-title-new">Controladora Financeira</h4>
+                            <p class="curriculo-item-company-new">Leetri Cable • 2016-2022</p>
+                        </div>
+                        
+                        <div class="curriculo-item-new">
+                            <h4 class="curriculo-item-title-new">Programadora Java</h4>
+                            <p class="curriculo-item-company-new">Capgemini • 2011-2014</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formação -->
+                <div class="col-lg-6">
+                    <div class="curriculo-column">
+                        <h3 class="curriculo-column-title">Formação</h3>
+                        
+                        <div class="curriculo-item-new">
+                            <h4 class="curriculo-item-title-new">Bacharelato Sistemas de Informação</h4>
+                            <p class="curriculo-item-company-new">Centro Universitário ENIAC • 2010-2015</p>
+                        </div>
+                        
+                        <div class="curriculo-item-new">
+                            <h4 class="curriculo-item-title-new">UI/UX Development</h4>
+                            <p class="curriculo-item-company-new">Cesae • 2025-2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mb-5">
+
+            <button class="btn btn-download-cv-new" onclick="cvClick()">
+                <i class="fas fa-download me-2"></i>
+                Download CV
+                </button>
+        </div>
+
+        <!-- Contato -->
+        <div class="text-center mb-5">
+            <h2 class="contato-title">Vamos conversar?</h2>
+            <p class="contato-subtitle">Entre em contato comigo</p>
+        </div>
+        <div class="curriculo-card-container">
+            <div class="row g-0">
+                <!-- Formulário -->
+                <div class="col-lg-6">
+                    <div class="curriculo-column">
+                        <form class="contato-form-new" method="post" id="contatoForm">
+                            <div class="form-group mb-4">
+                                <input type="text" class="form-control contato-input-new" id="nomeContato" placeholder="Seu nome" required>
+                            </div>
+                            
+                            <div class="form-group mb-4">
+                                <input type="email" class="form-control contato-input-new" id="emailContato" placeholder="Seu e-mail" required>
+                            </div>
+                            
+                            <div class="form-group mb-4">
+                                <textarea class="form-control contato-input-new" id="mensagemContato" rows="6" placeholder="Sua mensagem" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-enviar-mensagem-new" id="enviarMensagem">
+                                Enviar mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Informações de Contato -->
+                <div class="col-lg-6">
+                    <div class="curriculo-column">
+                        <div class="contato-info-container-new">
+                            <div class="contato-info-item-new">
+                                <div class="contato-icon-wrapper-new">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contato-info-text-new">
+                                    <span class="contato-info-label-new">Email</span>
+                                    <span class="contato-info-value-new">marcelle.ml@gmail.com</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contato-info-item-new">
+                                <div class="contato-icon-wrapper-new">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contato-info-text-new">
+                                    <span class="contato-info-label-new">Telefone</span>
+                                    <span class="contato-info-value-new">+351 914 968 218</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contato-info-item-new">
+                                <div class="contato-icon-wrapper-new">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contato-info-text-new">
+                                    <span class="contato-info-label-new">Localização</span>
+                                    <span class="contato-info-value-new">Porto, Portugal</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contato-redes-new">
+                                <p class="contato-redes-text-new">Ou me encontre nas redes:</p>
+                                <div class="contato-social-buttons-new">
+                                    <button class="btn btn-social-new linkedin" onclick="linkedInClick()">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </button>
+                                    <button class="btn btn-social-new github" onclick="gitHubClick()">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+          <div class="row justify-content-between align-items-start">
+              <!-- Marcelle -->
+              <div class="col-md-6">
+                  <div class="footer-logo">
+                      <div><img src="./images/M-Pronto.webp" alt="Marcelle Marques Logo"></div>
+                      <span class="footer-title">Marcelle Marques</span>
+                  </div>
+                  <p class="footer-description">
+                      Desenvolvedora Front End apaixonada <br>por criar soluções digitais inovadoras<br> e experiências únicas para usuários.
+                  </p>
+              </div>
+              
+              <!-- Contact -->
+              <div class="col-md-4">
+                  <div class="footer-section">
+                      <h5>Contato</h5>
+                      <div class="contact-item" onclick="handlePhoneClick()">
+                          <i class="fas fa-phone"></i>
+                          <span>+351 914 968 218</span>
+                      </div>
+                      <div class="contact-item" onclick="handleEmailClick()">
+                          <i class="fas fa-envelope"></i>
+                          <span>marcelle.ml@gmail.com</span>
+                      </div>
+                      <div class="social-buttons d-flex">
+                          <button class="btn btn-social d-flex align-items-center justify-content-center" onclick="linkedInClick()">
+                              <i class="fab fa-linkedin-in"></i>
+                          </button>
+                          <button class="btn btn-social d-flex align-items-center justify-content-center" onclick="gitHubClick()">
+                              <i class="fab fa-github"></i>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="footer-bottom">
+          <p>© 2025 Marcelle Marques. Todos os direitos reservados</p>
+      </div>
+  </footer>
+
+    
+<!-- Modal de Projeto -->
+<div class="modal fade" id="projetoModal" tabindex="-1" aria-labelledby="projetoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content projeto-modal-content">
+      <div class="modal-header projeto-modal-header">
+        <div class="projeto-modal-title-container">
+          <h2 class="projeto-modal-title" id="projetoModalLabel">Portfolio Profissional</h2>
+          <span class="projeto-status" id="projetoStatus">Em Produção</span>
+        </div>
+        <button type="button" class="btn-close projeto-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </div>
+      <div class="modal-body projeto-modal-body">
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="projeto-modal-description" id="projetoDescricao">
+              A NormaENGTEC é uma empresa especializada em infraestruturas elétricas e telecomunicações. Eles oferecem soluções completas em áreas como instalações elétricas, cabeamento de dados, Data Centers, iluminação LED, sistemas CFTV e fibra ótica.
+            </p>
+            
+            <div class="projeto-modal-image-container">
+              <img src="./images/normaengtec.webp" alt="Preview do Projeto" class="projeto-modal-image" id="projetoImagem">
+            </div>
+            
+            <div class="projeto-modal-tech-section">
+              <h3 class="projeto-modal-tech-title">Tecnologias</h3>
+              <div class="projeto-modal-tech-tags" id="projetoTecnologias">
+                <span class="projeto-modal-tech-tag">HTML/CSS</span>
+                <span class="projeto-modal-tech-tag">JavaScript</span>
+                <span class="projeto-modal-tech-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4">
+            <div class="projeto-modal-info">
+              <h3 class="projeto-modal-info-title">Informações do Projeto</h3>
+              
+              <div class="projeto-modal-info-item">
+                <span class="projeto-modal-info-label">Cliente</span>
+                <span class="projeto-modal-info-value" id="projetoCliente">NormaENGTEC</span>
+              </div>
+              
+              <div class="projeto-modal-info-item">
+                <span class="projeto-modal-info-label">Duração</span>
+                <span class="projeto-modal-info-value" id="projetoDuracao">3 semanas</span>
+              </div>
+              
+              <div class="projeto-modal-info-item">
+                <span class="projeto-modal-info-label">Tipo</span>
+                <span class="projeto-modal-info-value" id="projetoTipo">Website</span>
+              </div>
+              
+              <div class="projeto-modal-info-item">
+                <span class="projeto-modal-info-label">Ano</span>
+                <span class="projeto-modal-info-value" id="projetoAno">2025</span>
+              </div>
+              
+              <div class="projeto-modal-actions">
+                <button class="btn btn-projeto-demo" id="btnVerDemo">
+                  <i class="fas fa-external-link-alt me-2"></i>
+                  Ver Demo
+                </button>
+                <button class="btn btn-projeto-codigo" id="btnVerCodigo">
+                  <i class="fab fa-github me-2"></i>
+                  Ver Código
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="homecompleto2.js"></script>
+</body>
+</html>
